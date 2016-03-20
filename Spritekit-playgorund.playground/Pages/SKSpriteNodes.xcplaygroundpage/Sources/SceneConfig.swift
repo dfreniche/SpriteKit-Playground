@@ -12,10 +12,20 @@ public func setupView() -> SKView {
     return view
 }
 
-public func setupScene() -> SKScene {
-    let scene = SKScene(size: CGSize(width: 1024, height: 768))
-    scene.scaleMode = .AspectFit    // define the scaleMode for this scene
-    scene.backgroundColor = SKColor.lightGrayColor()
+public class Scene: SKScene {
+    override init(size: CGSize) {
+        super.init(size: size)
+        self.scaleMode = .AspectFit    // define the scaleMode for this scene
+        self.backgroundColor = SKColor.lightGrayColor()
+    }
 
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+public func setupScene() -> Scene {
+    let scene = Scene(size: CGSize(width: 1024, height: 768))
+    
     return scene
 }
