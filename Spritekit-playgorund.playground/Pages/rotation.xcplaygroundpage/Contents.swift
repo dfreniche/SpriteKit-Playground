@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 import SpriteKit
 import XCPlayground
 
@@ -28,12 +30,23 @@ scene.addChild(myNode)
 
 view
 
-let blueBox = SKSpriteNode(color: SKColor.blueColor(), size: CGSize(width: 150, height: 150))
+let blueBox = SKSpriteNode(color: SKColor.blueColor(), size: CGSize(width: 100, height: 100))
 blueBox.position = CGPointZero
 
 myNode.addChild(blueBox)
 
-let redBox = SKSpriteNode(color: SKColor.redColor(), size: CGSize(width: 150, height: 150))
+let redBox = SKSpriteNode(color: SKColor.redColor(), size: CGSize(width: 100, height: 100))
 blueBox.position = CGPoint(x: 150, y: 0)
 
 myNode.addChild(redBox)
+
+
+// rotation
+
+let π: CGFloat = 3.14
+let _45º = π/2
+
+myNode.zRotation = _45º;
+
+
+//: [Next](@next)
