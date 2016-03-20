@@ -6,5 +6,6 @@
         <page name='Particle effects'/>
         <page name='SKSpriteNodes'/>
         <page name='SKLabel'/>
+        <page name='GameLoop'/>
     </pages>
 </playground>
