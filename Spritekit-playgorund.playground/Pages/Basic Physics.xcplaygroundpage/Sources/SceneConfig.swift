@@ -1,5 +1,5 @@
 import SpriteKit
-import XCPlayground
+import PlaygroundSupport
 
 // Create your view
 
@@ -7,7 +7,7 @@ public func setupView() -> SKView {
     let view = SKView(frame: CGRect(x: 0, y: 0, width: 1024, height: 768))
     view.showsFPS = true
     // Show the view in the Playground
-    XCPlaygroundPage.currentPage.liveView = view
+    PlaygroundPage.current.liveView = view
     
     return view
 }
@@ -18,8 +18,8 @@ public class Scene: SKScene {
     
     override init(size: CGSize) {
         super.init(size: size)
-        self.scaleMode = .AspectFit    // define the scaleMode for this scene
-        self.backgroundColor = SKColor.lightGrayColor()
+        self.scaleMode = .aspectFit    // define the scaleMode for this scene
+        self.backgroundColor = SKColor.lightGray
         
         myPlane.position = CGPoint(x: self.size.width / 2, y: self.size.height)
         

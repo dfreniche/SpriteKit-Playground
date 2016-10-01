@@ -16,8 +16,8 @@ XCPlaygroundPage.currentPage.liveView = view
 // define the scene
 
 let scene = SKScene(size: CGSize(width: 1024, height: 768))
-scene.scaleMode = .AspectFit    // define the scaleMode for this scene
-scene.backgroundColor = SKColor.lightGrayColor()
+scene.scaleMode = .aspectFit    // define the scaleMode for this scene
+scene.backgroundColor = SKColor.lightGray
 
 // shows this scene on the SKView
 view.presentScene(scene)
@@ -30,12 +30,12 @@ scene.addChild(myNode)
 
 view
 
-let blueBox = SKSpriteNode(color: SKColor.blueColor(), size: CGSize(width: 100, height: 100))
-blueBox.position = CGPointZero
+let blueBox = SKSpriteNode(color: SKColor.blue, size: CGSize(width: 100, height: 100))
+blueBox.position = CGPoint.zero
 
 myNode.addChild(blueBox)
 
-let redBox = SKSpriteNode(color: SKColor.redColor(), size: CGSize(width: 100, height: 100))
+let redBox = SKSpriteNode(color: SKColor.red, size: CGSize(width: 100, height: 100))
 blueBox.position = CGPoint(x: 150, y: 0)
 
 myNode.addChild(redBox)
